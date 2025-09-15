@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>موز میقولی؟</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .half {
+      flex: 1 1 50%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .right {
+      background: linear-gradient(135deg, #00c6c6, #00a3a3);
+      color: white;
+    }
+
+    .left {
+      background: linear-gradient(135deg, #f9d423, #ffce00);
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 80%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .half {
+        flex: 1 1 100%;
+        min-height: 50vh;
+        padding: 30px 10px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      img {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="right half">
+    <h1>This is me</h1>
+    <img src="https://uploadkon.ir/uploads/d25e15_25fa975a64bdae6f77985a01359c4e132a.jpg" alt="Angel">
+  </div>
+
+  <div class="left half">
+    <h1>This is you</h1>
+    <img src="https://uploadkon.ir/uploads/ea9515_2556653baf91c553b9a8196fe6d713510b.jpg" alt="Banana">
+  </div>
+
+</body>
+</html>
