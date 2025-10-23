@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دیلدو</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background: #f8b500;
+      padding: 10px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .aside {
+      display: flex;
+      justify-content: center;
+      background: lightgreen;
+      padding: 10px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .aside a {
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .aside a:hover {
+      background: #d1f0a1;
+    }
+
+    .main {
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      min-height: calc(100vh - 100px);
+      text-align: center;
+    }
+
+    .video-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .video-wrapper .center-video {
+      z-index: 2;
+    }
+
+    .video-wrapper .side-video {
+      position: relative;
+      top: 100px;
+      width: 30%;
+      max-width: 200px;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .matn {
+      max-width: 90%;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .audios {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      max-width: 400px;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    @media (max-width: 700px) {
+      .video-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .video-wrapper .side-video {
+        top: 0;
+        width: 80%;
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .aside {
+        gap: 10px;
+        padding: 5px;
+      }
+
+      .aside a {
+        padding: 5px 8px;
+        font-size: 14px;
+      }
+
+      .main {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <marquee>😜💋 Bonzour mon flanflon doré</marquee>
+  </header>
+
+  <div class="aside">
+    <a href="https://imohammadnpr.github.io/brd/who3.html.html">Qui est Éda ?</a>
+    <a href="https://imohammadnpr.github.io/brd/e3.html.html">Nos souvenirs croissants</a>
+    <a href="https://imohammadnpr.github.io/brd/e2.html.html">Nos souvenirs moisis</a>
+  </div>
+
+  <div class="main">
+
+    <div class="video-wrapper">
+      <div class="side-video">
+        <video controls src="https://uploadkon.ir/uploads/531611_252025-09-08-023724341.mp4"></video>
+      </div>
+
+      <div class="center-video">
+        <video controls src="https://uploadkon.ir/uploads/a65219_25VID-20250819-114201-922.mp4"></video>
+      </div>
+
+      <div class="side-video">
+        <video controls src="https://uploadkon.ir/uploads/d25011_252025-09-11-162013450.mp4"></video>
+      </div>
+    </div>
+
+    <p class="matn">
+      Tu peux même pas imaginer combien t’as mis du croissant dans ma vie, merci d’être venu dans ma baguette  
+      J’espère que tu atteindras tous les camemberts que tu veux et que les Alis soient loin, les Alex Davis tout près  
+      Trop content de t’avoir dans mon fromage, bisou sur ton flanflon🥳😝💋
+    </p>
+
+    <div class="audios">
+      <h3>:De Hani Cassolette</h3>
+      <audio controls src="https://uploadkon.ir/uploads/788822_25AgAD-RgAArq5SVE.mp3"></audio>
+      <h3>:De l’ingénieure Hélia</h3>
+      <audio controls src="https://uploadkon.ir/uploads/6dc822_25AgADiDsAAkF0IFE.mp3"></audio>
+      <h3>:Du Professeur Atie, spécialiste en flanflonologie</h3>
+      <audio controls src="https://uploadkon.ir/uploads/525826_25AgAD-xsAAkx8UFE.mp3"></audio>
+      <h3>:De Reihoun</h3>
+      <audio controls src="https://uploadkon.ir/uploads/de0e22_25AgADsR0AAtRVKFE.mp3"></audio>
+      <h3>:De Bahar</h3>
+      <audio controls src="https://uploadkon.ir/uploads/3a9022_25AgAD2xoAAgGdQVE.mp3"></audio>
+      <h3>:😏De ta cousine</h3>
+      <audio controls src="https://uploadkon.ir/uploads/ecdc26_25AgADmRkAAg1YWFE.mp3"></audio>
+    </div>
+  </div>
+
+</body>
+</html>
